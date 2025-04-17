@@ -285,6 +285,38 @@ footer {
     .subtitle {
         font-size: 1.2rem;
     }
+
+    /* Add padding to account for fixed navbar */
+    .hero {
+        padding-top: 120px; /* Increased padding to account for navbar height */
+    }
+
+    .profile-image {
+        width: 150px; /* Slightly smaller on mobile */
+        height: 150px;
+    }
+
+    /* Adjust navbar height for mobile */
+    .navbar {
+        height: auto;
+        padding: 0.5rem 0;
+    }
+
+    .nav-content {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Add styles for very small screens */
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 140px; /* Even more padding for very small screens */
+    }
+
+    .profile-image {
+        width: 120px; /* Even smaller on very small screens */
+        height: 120px;
+    }
 }
 
 /* Form Loading State */
