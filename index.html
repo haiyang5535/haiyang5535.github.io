@@ -1,42 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me - Haiyang Wu</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haiyang Wu - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Haiyang Wu</h1>
-    <img src="https://avatars.githubusercontent.com/u/56014131?v=4" alt="A picture of me" title="A picture of me" height="200">
-  </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m a Mathematics-Statistics major at the University of Connecticut with a strong background in Python programming, statistical modeling, and data analytics. I’ve created my own project for data collection, manipulation, and visualization, and I’m an active member of UConn’s Data Science Club. My skills in Python, MySQL, statistical modeling, and statistical analysis have prepared me for real-world challenges.
-      </p>
-    </section>
-    <section>
-      <h2>My GitHub Projects</h2>
-      <ul>
-        <li><a href="https://github.com/haiyang5535/LA-Wildfire-Spread-Prediction" target="_blank" rel="noopener noreferrer">LA-Wildfire-Spread-Prediction</a></li>
-        <li><a href="https://github.com/haiyang5535/Data-Collection-Manipulation-and-Visualization-Tool" target="_blank" rel="noopener noreferrer">Data-Collection-Manipulation-and-Visualization-Tool</a></li>
-        <li><a href="https://github.com/haiyang5535/WeatherAndStudyPatterns" target="_blank" rel="noopener noreferrer">WeatherAndStudyPatterns</a></li>
-        <li><a href="https://github.com/haiyang5535/count-app" target="_blank" rel="noopener noreferrer">Count-app</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contacts</h2>
-      <p>
-        <a href="https://www.linkedin.com/in/haiyang-wu/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
-        <a href="mailto:guda5535@gmail.com">guda5535@gmail.com</a>
-      </p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Haiyang Wu</p>
-  </footer>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">HW</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="https://avatars.githubusercontent.com/u/56014131?v=4" alt="A picture of me" class="profile-image" title="A picture of me">
+                <h1>Haiyang Wu</h1>
+                <p class="subtitle">Mathematics-Statistics Student & Data Analyst</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Mathematics-Statistics major at the University of Connecticut with a strong background in Python programming, statistical modeling, and data analytics. I've created my own project for data collection, manipulation, and visualization, and I'm an active member of UConn's Data Science Club. My skills in Python, MySQL, statistical modeling, and statistical analysis have prepared me for real-world challenges.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Statistical Modeling</span>
+                        <span class="skill-tag">Data Analytics</span>
+                        <span class="skill-tag">Data Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My GitHub Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>LA Wildfire Spread Prediction</h3>
+                    <p>Predicting wildfire spread patterns in Los Angeles using advanced statistical models.</p>
+                    <a href="https://github.com/haiyang5535/LA-Wildfire-Spread-Prediction" target="_blank" rel="noopener noreferrer" class="btn secondary">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Data Collection & Visualization Tool</h3>
+                    <p>A comprehensive tool for data collection, manipulation, and visualization.</p>
+                    <a href="https://github.com/haiyang5535/Data-Collection-Manipulation-and-Visualization-Tool" target="_blank" rel="noopener noreferrer" class="btn secondary">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Weather and Study Patterns</h3>
+                    <p>Analyzing the relationship between weather conditions and study patterns.</p>
+                    <a href="https://github.com/haiyang5535/WeatherAndStudyPatterns" target="_blank" rel="noopener noreferrer" class="btn secondary">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Count App</h3>
+                    <p>A practical counting application with modern features.</p>
+                    <a href="https://github.com/haiyang5535/count-app" target="_blank" rel="noopener noreferrer" class="btn secondary">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/haiyang-wu/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:guda5535@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/haiyang5535" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+                <form id="contact-form">
+                    <input type="text" name="from_name" placeholder="Name" required>
+                    <input type="email" name="from_email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Haiyang Wu. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
+
